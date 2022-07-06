@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/waterfall_anim_strip_4.png-c171f6190dd9fa22cde41e6d47ce82ce.stex"
+path="res://.import/Wasteland_Sky.png-6dbe5ca5f08e669787d835ab44ad041f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Tiles/waterfall_anim_strip_4.png"
-dest_files=[ "res://.import/waterfall_anim_strip_4.png-c171f6190dd9fa22cde41e6d47ce82ce.stex" ]
+source_file="res://Sprites/Tiles/Wasteland_Sky.png"
+dest_files=[ "res://.import/Wasteland_Sky.png-6dbe5ca5f08e669787d835ab44ad041f.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0
