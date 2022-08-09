@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Sprites/Tiles/Wasteland-Files.png" type="Texture" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Camera2D.gd" type="Script" id=9]
 [ext_resource path="res://World.gd" type="Script" id=10]
 [ext_resource path="res://Scenes/SpinningBlade.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/SavePoint.tscn" type="PackedScene" id=12]
 
 [sub_resource type="Curve2D" id=26]
 _data = {
@@ -25,6 +26,11 @@ _data = {
 [sub_resource type="Curve2D" id=27]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 119, -4, 0, 0, 0, 0, 53, -4, 0, 0, 0, 0, -3, -3, 0, 0, 0, 0, -93, -2, 0, 0, 0, 0, -138, -3, 0, 0, 0, 0, 120, -3, 0, 0, 0, 0, 119, -4 )
+}
+
+[sub_resource type="Curve2D" id=28]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 119, -1, 0, 0, 0, 0, 58, -2, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, -65, -2, 0, 0, 0, 0, -65, -15, 0, 0, 0, 0, -96, -17, 0, 0, 0, 0, -97, -31, 0, 0, 0, 0, -224, -34, 0, 0, 0, 0, -99, -33, 0, 0, 0, 0, -95, -19, 0, 0, 0, 0, -66, -17, 0, 0, 0, 0, -65, -2, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 58, -1, 0, 0, 0, 0, 120, 0, 0, 0, 0, 0, 119, -1 )
 }
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
@@ -513,7 +519,7 @@ position = Vector2( 1864, 267 )
 rotation = -3.14159
 
 [node name="Swinging Trap2" parent="." instance=ExtResource( 6 )]
-position = Vector2( 453, -11 )
+position = Vector2( 453, -17 )
 
 [node name="Swinging Trap3" parent="." instance=ExtResource( 6 )]
 position = Vector2( 804, -1 )
@@ -574,6 +580,10 @@ position = Vector2( 406, 48 )
 [node name="Path2D" parent="SpinningBlade3" index="1"]
 curve = SubResource( 26 )
 
+[node name="PathFollow2D" parent="SpinningBlade3/Path2D" index="0"]
+position = Vector2( 121, -1 )
+rotation = 3.1325
+
 [node name="SpinningBlade2" parent="." instance=ExtResource( 11 )]
 position = Vector2( 1012, 97 )
 
@@ -590,6 +600,25 @@ position = Vector2( 1675, 274 )
 [node name="Path2D" parent="SpinningBlade4" index="1"]
 curve = SubResource( 27 )
 
+[node name="PathFollow2D" parent="SpinningBlade4/Path2D" index="0"]
+position = Vector2( 119, -4 )
+
+[node name="SpinningBlade5" parent="." instance=ExtResource( 11 )]
+position = Vector2( 1344, 289 )
+
+[node name="Path2D" parent="SpinningBlade5" index="1"]
+curve = SubResource( 28 )
+
+[node name="PathFollow2D" parent="SpinningBlade5/Path2D" index="0"]
+position = Vector2( 119, -1 )
+rotation = -3.1252
+
+[node name="Area2D" parent="SpinningBlade5/Path2D" index="1" instance=ExtResource( 12 )]
+position = Vector2( 473, -171 )
+
+[node name="SavePoint" parent="SpinningBlade5/Path2D" index="2" instance=ExtResource( 12 )]
+position = Vector2( -56, -154 )
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 18 )
 cell_size = Vector2( 16, 16 )
@@ -601,3 +630,4 @@ tile_data = PoolIntArray( -65538, 0, 7, -65537, 0, 8, -131072, 0, 9, -2, 0, 6554
 [editable path="SpinningBlade3"]
 [editable path="SpinningBlade2"]
 [editable path="SpinningBlade4"]
+[editable path="SpinningBlade5"]
