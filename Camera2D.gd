@@ -1,5 +1,5 @@
 extends Camera2D
-var zoomed = false
+var zoomed = true
 onready var target = get_parent().get_node("Player")
 onready var center = get_viewport_rect().size/2
 
