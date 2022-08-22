@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=2]
+[gd_scene load_steps=58 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Sprites/Tiles/Wasteland-Files.png" type="Texture" id=2]
@@ -45,11 +45,6 @@ _data = {
 [sub_resource type="Curve2D" id=40]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 122, -2, 0, 0, 0, 0, 120, -2, 0, 0, 0, 0, 118, 80, 0, 0, 0, 0, 120, -2, 0, 0, 0, 0, 65, -1, 0, 0, 0, 0, 64, 80, 0, 0, 0, 0, 122, 80, 0, 0, 0, 0, 122, -3, 0, 0, 0, 0, 122, -2 )
-}
-
-[sub_resource type="Curve2D" id=35]
-_data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 119, -1, 0, 0, 0, 0, 156, -1, 0, 0, 0, 0, 193, -1, 0, 0, 0, 0, 223, -1, 0, 0, 0, 0, 193, -2, 0, 0, 0, 0, 156, -1, 0, 0, 0, 0, 119, -1, 0, 0, 0, 0, 84, -1, 0, 0, 0, 0, 41, -1, 0, 0, 0, 0, 18, -1, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, -33, 0, 0, 0, 0, -61, -33, 0, 0, 0, 0, -110, -33, 0, 0, 0, 0, -76, -33, 0, 0, 0, 0, -61, -32, 0, 0, 0, 0, 1, -33, 0, 0, 0, 0, 1, -1, 0, 0, 0, 0, 18, -1, 0, 0, 0, 0, 41, -1, 0, 0, 0, 0, 56, -1, 0, 0, 0, 0, 82, -1, 0, 0, 0, 0, 120, 1, 0, 0, 0, 0, 119, -1 )
 }
 
 [sub_resource type="Curve2D" id=34]
@@ -461,7 +456,7 @@ __meta__ = {
 }
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 97, 57 )
+position = Vector2( 97, 56 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
@@ -609,10 +604,6 @@ rotation = 3.14159
 position = Vector2( 328, 219 )
 rotation = 3.14159
 
-[node name="Spike Traps56" parent="SpikeTraps" instance=ExtResource( 7 )]
-position = Vector2( 344, 219 )
-rotation = 3.14159
-
 [node name="Spike Traps59" parent="SpikeTraps" instance=ExtResource( 7 )]
 position = Vector2( 325, 203 )
 rotation = -1.5708
@@ -620,10 +611,6 @@ rotation = -1.5708
 [node name="Spike Traps60" parent="SpikeTraps" instance=ExtResource( 7 )]
 position = Vector2( 325, 187 )
 rotation = -1.5708
-
-[node name="Spike Traps57" parent="SpikeTraps" instance=ExtResource( 7 )]
-position = Vector2( 360, 219 )
-rotation = 3.14159
 
 [node name="Spike Traps58" parent="SpikeTraps" instance=ExtResource( 7 )]
 position = Vector2( 376, 219 )
@@ -726,11 +713,11 @@ position = Vector2( 1320, 283 )
 rotation = -3.14159
 
 [node name="Spike Traps16" parent="SpikeTraps" instance=ExtResource( 7 )]
-position = Vector2( 1369, 187 )
+position = Vector2( 1352, 187 )
 rotation = -3.14159
 
 [node name="Spike Traps17" parent="SpikeTraps" instance=ExtResource( 7 )]
-position = Vector2( 1404, 187 )
+position = Vector2( 1420, 187 )
 rotation = -3.14159
 
 [node name="Spike Traps18" parent="SpikeTraps" instance=ExtResource( 7 )]
@@ -857,14 +844,6 @@ rotation = -3.14159
 position = Vector2( 856, 459 )
 rotation = -3.14159
 
-[node name="Spike Traps98" parent="SpikeTraps" instance=ExtResource( 7 )]
-position = Vector2( 776, 457 )
-rotation = -3.14159
-
-[node name="Spike Traps99" parent="SpikeTraps" instance=ExtResource( 7 )]
-position = Vector2( 760, 457 )
-rotation = -3.14159
-
 [node name="Spike Traps102" parent="SpikeTraps" instance=ExtResource( 7 )]
 position = Vector2( 808, 457 )
 rotation = -3.14159
@@ -880,14 +859,6 @@ rotation = -3.14159
 [node name="Spike Traps101" parent="SpikeTraps" instance=ExtResource( 7 )]
 position = Vector2( 728, 457 )
 rotation = -3.14159
-
-[node name="Spike Traps104" parent="SpikeTraps" instance=ExtResource( 7 )]
-position = Vector2( 776, 440 )
-rotation = -6.28318
-
-[node name="Spike Traps105" parent="SpikeTraps" instance=ExtResource( 7 )]
-position = Vector2( 760, 440 )
-rotation = -6.28318
 
 [node name="Spike Traps106" parent="SpikeTraps" instance=ExtResource( 7 )]
 position = Vector2( 808, 440 )
@@ -1109,6 +1080,18 @@ rotation = -3.14159
 position = Vector2( 1156, 827 )
 rotation = -3.14159
 
+[node name="Spike Traps184" parent="SpikeTraps" instance=ExtResource( 7 )]
+position = Vector2( 1192, 940 )
+rotation = -3.14159
+
+[node name="Spike Traps185" parent="SpikeTraps" instance=ExtResource( 7 )]
+position = Vector2( 1176, 940 )
+rotation = -3.14159
+
+[node name="Spike Traps186" parent="SpikeTraps" instance=ExtResource( 7 )]
+position = Vector2( 1160, 940 )
+rotation = -3.14159
+
 [node name="Spike Traps147" parent="SpikeTraps" instance=ExtResource( 7 )]
 position = Vector2( 1015, 779 )
 rotation = -3.14159
@@ -1162,7 +1145,7 @@ position = Vector2( 1863, 859 )
 rotation = -3.14159
 
 [node name="Spike Traps20" parent="SpikeTraps" instance=ExtResource( 7 )]
-position = Vector2( 1516, 187 )
+position = Vector2( 1494, 187 )
 rotation = -3.14159
 
 [node name="Spike Traps21" parent="SpikeTraps" instance=ExtResource( 7 )]
@@ -1243,16 +1226,6 @@ curve = SubResource( 40 )
 position = Vector2( 122, -2 )
 rotation = 2.03905
 
-[node name="SpinningBlade10" parent="Blades" instance=ExtResource( 11 )]
-position = Vector2( 288, 176 )
-
-[node name="Path2D" parent="Blades/SpinningBlade10" index="1"]
-curve = SubResource( 35 )
-
-[node name="PathFollow2D" parent="Blades/SpinningBlade10/Path2D" index="0"]
-position = Vector2( 119, -1 )
-rotation = 0.0
-
 [node name="SpinningBlade9" parent="Blades" instance=ExtResource( 11 )]
 position = Vector2( 606, 161 )
 
@@ -1332,6 +1305,10 @@ position = Vector2( 1171, 626 )
 
 [node name="Path2D" parent="Blades/SpinningBlade7" index="1"]
 curve = SubResource( 41 )
+
+[node name="PathFollow2D" parent="Blades/SpinningBlade7/Path2D" index="0"]
+position = Vector2( 121, -1 )
+rotation = -3.10457
 
 [node name="SpinningBlade18" parent="Blades" instance=ExtResource( 11 )]
 position = Vector2( 999, 530 )
@@ -1461,7 +1438,7 @@ position = Vector2( 63, 134 )
 position = Vector2( 1880, 435 )
 
 [node name="Button" parent="Doors/DoorAndButton3" index="1"]
-position = Vector2( -1536, -213 )
+position = Vector2( -1528, -213 )
 
 [node name="SpinningBlade7" parent="Doors" instance=ExtResource( 11 )]
 position = Vector2( 885, 194 )
@@ -1788,7 +1765,7 @@ position = Vector2( 1730, 192 )
 position = Vector2( 1348, 222 )
 
 [node name="Swinging Trap15" parent="Swing Traps" instance=ExtResource( 6 )]
-position = Vector2( 1424, 336 )
+position = Vector2( 1424, 321 )
 
 [node name="Swinging Trap16" parent="Swing Traps" instance=ExtResource( 6 )]
 position = Vector2( 1320, 336 )
@@ -1932,7 +1909,6 @@ tile_data = PoolIntArray( -65538, 0, 7, -65537, 0, 8, -131072, 0, 9, -2, 0, 6554
 [editable path="Blades/SpinningBlade15"]
 [editable path="Blades/SpinningBlade16"]
 [editable path="Blades/SpinningBlade17"]
-[editable path="Blades/SpinningBlade10"]
 [editable path="Blades/SpinningBlade9"]
 [editable path="Blades/SpinningBlade"]
 [editable path="Blades/SpinningBlade3"]
