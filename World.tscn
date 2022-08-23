@@ -12,7 +12,7 @@
 [ext_resource path="res://World.gd" type="Script" id=10]
 [ext_resource path="res://Scenes/SpinningBlade.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Scenes/SavePoint.tscn" type="PackedScene" id=12]
-[ext_resource path="res://Sprites/joystix monospace.ttf" type="DynamicFontData" id=13]
+[ext_resource path="res://Sprites/OverseerBold-DyzD.ttf" type="DynamicFontData" id=13]
 [ext_resource path="res://Scenes/Lava.tscn" type="PackedScene" id=14]
 
 [sub_resource type="DynamicFont" id=29]
@@ -445,12 +445,32 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="CanvasLayer/Control"]
-margin_left = 1751.0
-margin_top = 17.0
-margin_right = 1895.0
-margin_bottom = 44.0
+margin_left = 1831.0
+margin_top = 16.0
+margin_right = 1898.0
+margin_bottom = 41.0
 theme = SubResource( 30 )
 text = "00:00:00"
+
+[node name="Backgrounds" type="Node2D" parent="."]
+
+[node name="Background" type="Sprite" parent="Backgrounds"]
+position = Vector2( 960, 538 )
+scale = Vector2( 3.75, 4.20313 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Mountains 2" type="Sprite" parent="Backgrounds"]
+position = Vector2( 960, 549 )
+scale = Vector2( 3.75, 4.36719 )
+texture = ExtResource( 4 )
+
+[node name="Mountains 1" type="Sprite" parent="Backgrounds"]
+position = Vector2( 961.5, 541 )
+scale = Vector2( 3.74414, 4.17969 )
+texture = ExtResource( 5 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -1868,35 +1888,6 @@ position = Vector2( 1031, 816 )
 
 [node name="Swinging Trap47" parent="Swing Traps" instance=ExtResource( 6 )]
 position = Vector2( 267, 902 )
-
-[node name="Backgrounds" type="Node2D" parent="."]
-
-[node name="Mountain" type="Sprite" parent="Backgrounds"]
-position = Vector2( 966, 433 )
-scale = Vector2( 3.79883, 4.47266 )
-z_index = -2
-texture = ExtResource( 4 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Mountain 2" type="Sprite" parent="Backgrounds"]
-position = Vector2( 973, 556 )
-scale = Vector2( 3.86328, 4.22266 )
-z_index = -2
-texture = ExtResource( 5 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Background" type="Sprite" parent="Backgrounds"]
-position = Vector2( 932, 533 )
-scale = Vector2( 4.05273, 4.24609 )
-z_index = -3
-texture = ExtResource( 3 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 18 )
