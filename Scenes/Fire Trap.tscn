@@ -1,0 +1,217 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://New Traps/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Breather Trap/PNGs/Fire Breather Trap - Level 2.png" type="Texture" id=1]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 7.0
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 7.0
+
+[sub_resource type="CapsuleShape2D" id=4]
+radius = 20.0
+height = 3.99997
+
+[sub_resource type="CapsuleShape2D" id=5]
+radius = 31.0
+height = 14.0
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 41.5, 13 )
+
+[sub_resource type="Animation" id=7]
+resource_name = "Fire"
+length = 1.6
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Area2D/First HitBox:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.7, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Area2D/Second HitBox:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Area2D/Third HitBox:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1, 1.1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Area2D/Fourth HitBox:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1.1, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Area2D/Fifth HitBox:disabled")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 1.2, 1.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true ]
+}
+
+[sub_resource type="Animation" id=8]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Area2D/First HitBox:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Area2D/Second HitBox:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Area2D/Third HitBox:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Area2D/Fourth HitBox:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Area2D/Fifth HitBox:disabled")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+
+[node name="Fire Trap" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+hframes = 16
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 16, 10, 17, 10, 17, 8, 18, 8, 18, 7, 20, 7, 20, 8, 21, 8, 21, 9, 22, 9, 22, 11, 23, 11, 23, 12, 24, 12, 24, 13, 26, 13, 26, 14, 28, 14, 28, 15, 29, 15, 29, 17, 30, 17, 30, 18, 29, 18, 29, 19, 31, 19, 31, 20, 33, 20, 33, 22, 34, 22, 34, 23, 35, 23, 35, 24, 36, 24, 37, 24, 37, 23, 38, 23, 38, 22, 41, 22, 41, 23, 42, 23, 42, 24, 43, 24, 43, 27, 42, 27, 42, 28, 42, 29, 43, 29, 43, 30, 44, 30, 44, 31, 45, 31, 45, 32, 15, 32, 15, 31, 14, 31, 14, 30, 15, 30, 15, 29, 16, 29, 16, 28, 17, 28, 17, 27, 18, 27, 18, 26, 21, 26, 21, 25, 20, 25, 20, 24, 19, 24, 19, 23, 18, 23, 18, 22, 17, 22, 17, 21, 16, 21, 16, 20, 15, 20, 15, 19, 14, 19, 14, 18, 13, 18, 13, 17, 12, 17, 12, 15, 13, 15, 13, 13, 14, 13, 14, 14, 15, 14, 15, 15, 16, 15, 16, 17, 18, 17, 18, 18, 20, 18, 20, 17, 21, 17, 21, 15, 20, 15, 20, 13, 18, 13, 18, 12, 17, 12, 17, 11, 16, 11 )
+
+[node name="Area2D" type="Area2D" parent="." groups=["Deadly"]]
+
+[node name="First HitBox" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 3, -3 )
+shape = SubResource( 2 )
+disabled = true
+
+[node name="Second HitBox" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -33, -13 )
+shape = SubResource( 3 )
+disabled = true
+
+[node name="Third HitBox" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -36, -11 )
+rotation = 1.57079
+shape = SubResource( 4 )
+disabled = true
+
+[node name="Fourth HitBox" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -37, -3 )
+rotation = -1.57079
+shape = SubResource( 5 )
+disabled = true
+
+[node name="Fifth HitBox" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -35.5, 19 )
+shape = SubResource( 6 )
+disabled = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Fire"
+anims/Fire = SubResource( 7 )
+anims/RESET = SubResource( 8 )

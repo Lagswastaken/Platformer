@@ -1,0 +1,159 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Sprites/Tiles/Wasteland_Sky.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Tiles/Wasteland_Mountains_2.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Tiles/Wasteland_Mountains_1.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/Menu.gd" type="Script" id=4]
+[ext_resource path="res://Sprites/OverseerBold-DyzD.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 67
+font_data = ExtResource( 5 )
+
+[sub_resource type="Theme" id=2]
+default_font = SubResource( 1 )
+Button/colors/font_color = Color( 1, 1, 1, 1 )
+Button/colors/font_color_hover = Color( 0.996078, 0.94902, 0.396078, 1 )
+
+[sub_resource type="Theme" id=4]
+
+[sub_resource type="StyleBoxFlat" id=3]
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+draw_center = false
+
+[sub_resource type="Theme" id=8]
+
+[sub_resource type="Theme" id=9]
+
+[sub_resource type="DynamicFont" id=10]
+size = 50
+outline_size = 2
+outline_color = Color( 0.301961, 0.0156863, 0.447059, 1 )
+font_data = ExtResource( 5 )
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = SubResource( 2 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 960, 540 )
+scale = Vector2( 3.75, 4.21875 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 961.5, 539.5 )
+scale = Vector2( 3.74414, 4.22266 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 956.75, 541 )
+scale = Vector2( 3.7627, 4.21484 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -148.0
+margin_top = -29.0
+margin_right = 125.0
+margin_bottom = 53.0
+theme = SubResource( 4 )
+
+[node name="StartButton" type="Button" parent="VBoxContainer"]
+margin_right = 273.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 0, 200 )
+custom_styles/focus = SubResource( 3 )
+text = "Replay"
+flat = true
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+margin_top = 204.0
+margin_right = 273.0
+margin_bottom = 284.0
+custom_styles/hover = SubResource( 7 )
+custom_styles/focus = SubResource( 6 )
+text = "Quit"
+flat = true
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -262.0
+margin_top = -266.0
+margin_right = 263.0
+margin_bottom = -192.0
+theme = SubResource( 8 )
+custom_colors/font_color = Color( 0.509804, 0.654902, 0.839216, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+text = "Wasteland Adventures"
+
+[node name="Label2" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -148.0
+margin_top = -162.0
+margin_right = 125.0
+margin_bottom = -88.0
+theme = SubResource( 8 )
+custom_colors/font_color = Color( 0.509804, 0.654902, 0.839216, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+text = "GAME OVER!"
+
+[node name="Label3" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -233.0
+margin_top = -65.0
+margin_right = 40.0
+margin_bottom = 9.0
+theme = SubResource( 8 )
+custom_colors/font_color = Color( 0.509804, 0.654902, 0.839216, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+text = "YOUR TIME :"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Time" type="Label" parent="CanvasLayer/Control"]
+margin_left = 1012.0
+margin_top = 489.0
+margin_right = 1152.0
+margin_bottom = 545.0
+theme = SubResource( 9 )
+custom_colors/font_color = Color( 0.996078, 0.94902, 0.396078, 1 )
+custom_fonts/font = SubResource( 10 )
+text = "00:00:00"
+
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]
