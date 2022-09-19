@@ -59,7 +59,7 @@ func _physics_process(delta):
 		player_state  = state.IDLE
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		player_state = state.STARTJUMP
-		$AudioStreamPlayer2D.play()
+		$Jump.play()
 	elif velocity.x != 0:
 		player_state = state.RUNNING
 	if not is_on_floor():
@@ -77,5 +77,5 @@ func _physics_process(delta):
 func _on_DEATHZONE_area_entered(area):
 	if area.is_in_group("Deadly"):
 		if GameStats.check_reset()== false:
-			$AudioStreamPlayer2D2.play()
+			$Death.play()
 			global_position = GameStats.get_spawn().global_position
