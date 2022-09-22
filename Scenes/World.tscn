@@ -1171,6 +1171,9 @@ tile_data = PoolIntArray( -131073, 4, 0, -196608, 4, 0, -196607, 4, 0, -196606, 
 [node name="SavePoint" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1822, 118 )
 
+[node name="SavePoint2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 987, 86 )
+
 [editable path="Doors/DoorAndButton3"]
 [editable path="Doors/DoorAndButton4"]
 [editable path="Doors/DoorAndButton5"]
