@@ -456,7 +456,7 @@ position = Vector2( 63, 134 )
 position = Vector2( 1880, 435 )
 
 [node name="Button" parent="Doors/DoorAndButton3" index="1"]
-position = Vector2( -1528, -213 )
+position = Vector2( -1538, -213 )
 
 [node name="DoorAndButton4" parent="Doors" instance=ExtResource( 11 )]
 position = Vector2( 1669, 578 )
@@ -838,9 +838,6 @@ position = Vector2( 454, 147 )
 [node name="Sand Worm 9" parent="Sand Worms" instance=ExtResource( 25 )]
 position = Vector2( 338, 146 )
 
-[node name="Sand Worm 10" parent="Sand Worms" instance=ExtResource( 25 )]
-position = Vector2( 349, 192 )
-
 [node name="Sand Worm 14" parent="Sand Worms" instance=ExtResource( 25 )]
 position = Vector2( 346, 687 )
 
@@ -864,6 +861,9 @@ position = Vector2( 426, 704 )
 
 [node name="Sand Worm 6" parent="Sand Worms" instance=ExtResource( 25 )]
 position = Vector2( 236, 64 )
+
+[node name="Sand Worm3" parent="Sand Worms" instance=ExtResource( 15 )]
+position = Vector2( 368, 211 )
 
 [node name="Toxic Traps" type="Node2D" parent="."]
 
@@ -1138,7 +1138,7 @@ position = Vector2( 880, 961 )
 position = Vector2( -21, 987 )
 
 [node name="Player" parent="." instance=ExtResource( 7 )]
-position = Vector2( 97, 55 )
+position = Vector2( 94, 130 )
 
 [node name="Jump" type="AudioStreamPlayer2D" parent="Player"]
 position = Vector2( -96, -56 )
