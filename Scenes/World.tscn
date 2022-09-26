@@ -1138,7 +1138,7 @@ position = Vector2( 880, 961 )
 position = Vector2( -21, 987 )
 
 [node name="Player" parent="." instance=ExtResource( 7 )]
-position = Vector2( 94, 130 )
+position = Vector2( 94, 56 )
 
 [node name="Jump" type="AudioStreamPlayer2D" parent="Player"]
 position = Vector2( -96, -56 )
