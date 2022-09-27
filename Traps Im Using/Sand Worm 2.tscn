@@ -235,5 +235,3 @@ disabled = true
 position = Vector2( -16, 20 )
 shape = SubResource( 6 )
 disabled = true
-
-[node name="HitBox 7" type="CollisionShape2D" parent="Area2D"]
